@@ -1,0 +1,99 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+}
+
+.logo {
+    margin-left: 20px;
+  }
+  
+  #nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  #nav ul li {
+    margin-right: 20px;
+  }
+  
+  .quote {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  .social-icons {
+    position: fixed;
+    top: 0;                       
+    right: 0;
+}
+
+#aquarium {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background-image: url('D:/html course/water_park/New folder/240_F_657674483_5B173VDlRlvRPR4OSZgNeGlJEDKbs7V9.jpg'); 
+    background-size: cover;
+    z-index: -1;
+}
+
+.fish {
+    position: absolute;
+    width: 60px; /* Adjust the size of the fish */
+    height: 48px; /* Adjust the size of the fish */
+    
+}
+
+@keyframes swim {
+    100% { transform: translateX(100%); }
+}
+
+#fish1 {
+    top: 20%;
+    animation-delay: 0s;
+    background-image: url('D:/html course/water_park/New folder/fish.png'); /* Add your fish image */
+    background-size: contain;
+    animation: swim 5s linear infinite;
+}
+
+#fish2 {
+    width: 60px; /* Adjust the size of the fish */
+    height: 40px; 
+    size: 100px;
+    top: 30%;
+    right: 50%;
+    animation-delay: 2s;
+    background-image: url('D:/html course/water_park/New folder/fish2.png'); /* Add your fish image */
+    background-size: contain;
+    animation: swim 5s linear infinite;
+}
+#fish3 {
+    top: 70%;
+    right: 70%;
+    animation-delay: 4s;
+    background-image: url('D:/html course/water_park/New folder/fish3.png'); /* Add your fish image */
+    background-size: contain;
+    animation: swim 5s linear infinite;
+}
+#turtle {
+    top: 40%;
+    right:60%;
+    animation-delay: 4s;
+    background-image: url('D:/html course/water_park/New folder/turtle.png'); /* Add your fish image */
+    background-size: contain;
+    animation: swim 5s linear infinite;
+}
+/* Add more fish styles here */
